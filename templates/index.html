@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NLP Sentiment Analysis</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <canvas id="bgCanvas"></canvas>
+
+    <div class="container">
+
+        <div class="card">
+
+            <h1>🤖 NLP Sentiment Analysis</h1>
+
+            <p class="subtitle">
+                Analyze Movie Reviews using Machine Learning and Natural Language Processing
+            </p>
+             <div class="input-box">
+
+    <textarea
+        id="review"
+        placeholder="Type or Speak your movie review..."
+    ></textarea>
+
+    <button
+        id="voiceBtn"
+        class="voice-btn">
+
+        🎤
+
+    </button>
+
+</div>
+ 
+           <div class="button-group">
+
+             <button id="analyzeBtn">
+               Analyze Sentiment
+             </button>
+
+             <button id="clearBtn">
+                Clear
+              </button>
+
+            </div>
+
+            <div id="loading" class="loading">
+
+    <div class="loader"></div>
+
+    <p> AI is analyzing your review...</p>
+
+</div>
+
+            <div id="result" class="result">
+
+    <h2>Prediction Result</h2>
+
+    <p>
+        <strong>Sentiment :</strong>
+        <span id="sentiment">-</span>
+    </p>
+
+    <p>
+        <strong>Confidence :</strong>
+        <span id="confidence">0%</span>
+    </p>
+
+    <div class="progress-container">
+
+     <div id="progressBar" class="progress-bar"></div>
+
+    </div>
+
+    <button id="copyBtn" class="copy-btn">
+         Copy Result
+    </button>
+
+</div>
+
+        </div>
+
+    </div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+<!-- ==========================
+        FOOTER
+=========================== -->
+
+<footer class="footer">
+
+    <h3> Developed by <span>Rohan Bhowmik</span></h3>
+
+    <p>AI & Machine Learning | Data Science Developer | Web Developer</p>
+
+    <div class="footer-contact">
+
+        <p>bhowmikrohan83@gmail.com</p>
+
+        <p>+91 7982914191</p>
+
+    </div>
+
+    <div class="social-links">
+
+        <a href="https://www.linkedin.com/in/rohan-bhowmik-b014473a1" target="_blank">
+            LinkedIn
+        </a>
+
+        <a href="https://github.com/rohanbhowm25308" target="_blank">
+            GitHub
+        </a>
+
+        <a href="https://www.instagram.com/rohan_._.bhowmik.84?igsh=MWx3dWM5dHl1dWZsbQ==" target="_blank">
+            Instagram
+        </a>
+
+    </div>
+
+    <p class="copyright">
+        © 2026 Rohan Bhowmik. All Rights Reserved.
+    </p>
+
+</footer>    
+
+</body>
+
+</html>
